@@ -1,0 +1,241 @@
+%-------------------------
+% Resume in Latex
+% Author : Haris Waheed Bhatti
+% Based off of: https://github.com/jakegut/resume (https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Haris Waheed Bhatti} \\ \vspace{4pt}
+    \small Nationality: Pakistani $|$ Date of birth: 25/12/2001 \\ \vspace{2pt}
+    \small Stožice 44, 1000 Ljubljana, Slovenia (Home) $|$ (+386) 69437910 $|$ WhatsApp: +92 334 8103028 \\ \vspace{2pt}
+    \small \href{mailto:harisw95@gmail.com}{\underline{harisw95@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/bhatti25/}{\underline{linkedin.com/in/bhatti25}} $|$
+    \href{https://github.com/alfarseniko}{\underline{github.com/alfarseniko}} \\ \vspace{4pt}
+    \small \textbf{Work Authorisation:} Pakistani national residing in Slovenia on a temporary student residence permit with full-time work rights; eligible for a post-study job-search residence permit from September 2026.
+\end{center}
+
+
+%-----------PROFILE-----------
+\section{Profile}
+    \small{Haris Waheed Bhatti is a BIM and digital construction specialist completing a European Master's in Building Information Modelling at the University of Ljubljana, building on a Bachelor's in Civil Engineering from NUST, Pakistan. His work spans IFC-to-graph-database pipelines, LLM-based retrieval systems, and blockchain-based construction document management. He is seeking roles as a \textbf{BIM Software Developer}, \textbf{BIM Manager}, \textbf{Information Manager}, or \textbf{Digital Construction Specialist} in Slovenia.}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {European Master in Building Information Modelling}{15/11/2025 -- 30/09/2026}
+      {University of Ljubljana}{Slovenia}
+      \resumeItemListStart
+        \resumeItem{Field of study: Information Management in Construction}
+        \resumeItem{\textbf{Thesis:} Designing an IFC-to-\textbf{Neo4j} knowledge graph with an \textbf{LLM-based Retrieval-Augmented Generation (RAG)} pipeline for BIM data retrieval, implemented with \textbf{Claude} for AI-assisted development}
+        \resumeItem{Modeling IFC building data as a property graph in Neo4j, preserving the hierarchical and relational structure of BIM entities}
+        \resumeItem{Building an automated ingestion pipeline for bidirectional data flow between IFC files and the graph environment, enabling semantic querying and knowledge discovery across BIM datasets}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {BE Civil Engineering}{09/2020 -- 06/2024}
+      {National University of Science and Technology}{Pakistan}
+      \resumeItemListStart
+        \resumeItem{Final grade: 3.25/4.00}
+        \resumeItem{\textbf{Thesis:} \emph{Enhancing Construction Transparency and Dispute Resolution Through Blockchain-Based BIM Models} -- developed a \textbf{Solidity} smart contract to digitally sign and manage construction documents, with off-chain storage linked to the blockchain for immutability and transparency}
+        \resumeItem{Funded by a \textbf{PKR 100,000 grant} from the Pakistan Engineering Council; designed to streamline dispute resolution for construction stakeholders}
+        \resumeItem{Link: \href{https://bit.ly/49dUTmK}{bit.ly/49dUTmK} $|$ Contract: \href{https://sepolia.arbiscan.io/address/0x8535f1840d47b65ab11ac7d95b5430d017a4c867\#code}{sepolia.arbiscan.io/address/0x8535...c867}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Pakistani-Themed Expo BIM Management} $|$ \emph{IFC, Autodesk Construction Cloud}}{28/10/2024 -- 19/11/2024}
+          \resumeItemListStart
+            \resumeItem{Spearheaded a BIM management project for a Pakistani-themed expo in Guimarães, Portugal, leveraging \textbf{IFC} and \textbf{Autodesk Construction Cloud} to develop a comprehensive technical design}
+            \resumeItem{Facilitated collaboration between Architecture and MEP disciplines, creating a \textbf{federated model} that integrated diverse design inputs}
+            \resumeItem{Conducted \textbf{clash detection} and \textbf{compliance checks} to ensure the model met all information requirements and design standards}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Contract Management Intern}{07/08/2023 -- 01/09/2023}
+      {Engineering and Management Services}{Pakistan}
+      \resumeItemListStart
+        \resumeItem{Reviewed construction contract reports and arbitration case documentation under \textbf{FIDIC} conditions, and presented findings on FIDIC and arbitration procedures to the internal legal team}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Intern \emph{(Part-time, Remote -- Concurrent with Above)}}{17/07/2023 -- 24/08/2023}
+      {Southern Illinois University Edwardsville}{USA}
+      \resumeItemListStart
+        \resumeItem{Extracted and synthesized findings from academic articles and abstracts to support a faculty-mentored research proposal, applying feedback to refine presentation and analysis technique}
+        \resumeItem{Supervisor: \href{https://www.linkedin.com/in/saadullah1/}{linkedin.com/in/saadullah1}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Civil Engineering Intern}{11/07/2023 -- 04/08/2023}
+      {Fatima Fertilizer Company}{Pakistan}
+      \resumeItemListStart
+        \resumeItem{Modeled a 42m x 162m (6,804 m\textsuperscript{2}) rock phosphate storage shed independently in 3D from 2D drawings, coordinating with stakeholders to refine the design}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{BIM \& AEC Tools}{: IFC, Revit, Dynamo, Blender, Autodesk Construction Cloud, Three.js, WebIFC} \\
+     \textbf{Programming \& Data}{: TypeScript, Python, Solidity, Neo4j, Knowledge Graphs} \\
+     \textbf{AI / LLM}{: Claude, Retrieval-Augmented Generation (RAG), Artificial Intelligence} \\
+     \textbf{Languages}{: Urdu (Native), English (Fluent)}
+    }}
+ \end{itemize}
+
+
+%-----------LEADERSHIP & ACTIVITIES-----------
+\section{Leadership \& Activities}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Leadership \& Extracurricular Activities}{2020 -- 2024}
+      {National University of Science and Technology}{Pakistan}
+      \resumeItemListStart
+        \resumeItem{\textbf{Director, School Orientation Committee:} Coordinated logistics and onboarding programming for incoming student cohorts during NUST Orientation}
+        \resumeItem{\textbf{President, NUST 3v3 Madness Basketball Tournament:} Organized team registration and event logistics for a university-wide competition}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+    \textbf{\small Coursera Certificates}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Supervised Machine Learning: Regression and Classification}}{19/02/2023}
+          \resumeItemListStart
+            \resumeItem{DeepLearning.AI course covering Python-based AI algorithms, applied in the "AI for Built Environment" course. (\href{https://coursera.org/verify/T9ZJ8HYJX2E7}{coursera.org/verify/T9ZJ8HYJX2E7})}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Management of Urban Infrastructures -- Part 1}}{15/02/2024}
+          \resumeItemListStart
+            \resumeItem{EPFL course on how cities operate and how infrastructure is built, operated, maintained, and governed. (\href{https://coursera.org/verify/MWW4ZWUXSTDP}{coursera.org/verify/MWW4ZWUXSTDP})}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Innovative Governance of Large Urban Systems}}{21/02/2024}
+          \resumeItemListStart
+            \resumeItem{Course on governing large urban cities while balancing infrastructure, policy, and citizen well-being. (\href{https://coursera.org/verify/3VNHK3YRQ7MZ}{coursera.org/verify/3VNHK3YRQ7MZ})}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
