@@ -1,0 +1,259 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+% \addtolength{\oddsidemargin}{-0.6in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1.19in}
+% \addtolength{\topmargin}{-.7in}
+% \addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+\newcommand{\resumeSubheadingWithNote}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+}
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ali Subhan} \\ \vspace{1pt}
+    \small Barcelona, Spain $|$ (+34)679351116 $|$ \href{mailto:alisubhan5341@gmail.com}{\underline{alisubhan5341@gmail.com}} $|$ \href{https://linkedin.com/in/ali5341}{\underline{linkedin.com/in/ali5341}} $|$ \href{https://github.com/AliSubhan5341}{\underline{github.com/AliSubhan5341}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{AI Engineer with experience building and deploying LLM-based systems in production. Work spans QLoRA fine-tuning on HPC clusters, agentic pipelines with LangGraph and MCP, and multimodal RAG serving via vLLM. Published at top ML venues including ICML 2026 and TMLR, and recipient of the prestigious Erasmus Mundus scholarship. Based in Barcelona, open to AI/ML roles across Europe.}
+\vspace{4pt}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{LLMs \& Fine-Tuning}{: QLoRA, LoRA, PEFT, SFT, RLHF, DPO/PPO/GRPO, Hugging Face, vLLM, Unsloth, llama.cpp, LLM Evaluation} \\
+     \textbf{Agentic AI}{: LangGraph, LangChain, LlamaIndex, ReAct, MCP, Tool Calling, Multi-Agent Systems} \\
+     \textbf{RAG \& Retrieval}{: RAG, Vector dbs (Qdrant, FAISS, Pinecone, Weaviate), Semantic Search, Embedding Models} \\
+     \textbf{Deep Learning \& CV}{: PyTorch, TensorFlow, Transformers, Diffusion Models, VLMs, YOLO, ViTs, GCNs, OpenCV} \\
+     \textbf{MLOps \& LLMOps}{: FastAPI, Git, Docker, Kubernetes, SLURM, CUDA, DDP/FSDP, W\&B, MLflow, CI/CD, AWS (SageMaker, EC2, S3)} \\
+     \textbf{Data \& ML}{: NumPy, Pandas, scikit-learn} \\
+     \textbf{Languages}{: Python, C++, SQL}
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+\resumeSubheading
+  {Graduate AI Engineer}{Oct 2025 -- Present}
+  {FRI, University of Ljubljana}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built ScholarAgent, a production multimodal research assistant for grounded scientific Q\&A over PDFs; QLoRA fine-tuned Qwen3.5-9B (262K ctx.) on 6 datasets (270K--742K samples), served via vLLM (paged attention) for low-latency inference; released LoRA weights on Hugging Face}
+        \resumeItem{Designed a two-stage RAG pipeline using Qwen3-VL-Embedding-8B + Qdrant HNSW + Qwen3-VL-Reranker-8B cross-encoder reranking, improving top-3 retrieval precision by ${\sim}$12\%; evaluated on QASPER, SciFact, DocVQA, ChartQA, SPIQA}
+        \resumeItem{Built an MCP server with 3 autonomous tool-calling agents (arXiv, Semantic Scholar, live PDF ingest) at sub-2s ingest latency; deployed Gradio UI with PDF viewer and page-level citations}
+        \resumeItem{Built a synthetic data pipeline as part of an EU-funded project, enabling biometric vendors to harden face anti-spoofing systems without collecting sensitive real-world data; fine-tuned diffusion models to generate 50K+ realistic spoof samples across 5 attack types; synthetic-augmented training improved cross-domain HTER by 8.3\% and matched real-data baselines within 2\% ACER}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Machine Learning Research Engineer}{Jan 2023 -- Jun 2024}
+      {OPTImization and MAchine Learning (OPTIMAL) Lab, NUST}{Islamabad, PK}
+      \resumeItemListStart
+        \resumeItem{Automated industrial fiber-optic network inspection using a YOLOv8 based bifurcation detector, eliminating manual cable fault detection; TensorRT FP16 quantization achieved 3x faster inference at 94\% mAP on edge hardware (Jetson Nano, Raspberry Pi) with classical signal processing improving reliability by 25\%}
+        \resumeItem{Worked on a GAN-based shadow removal module for outdoor surveillance and autonomous driving pipelines; improved downstream detection accuracy by 18\% and designed it as a standalone reusable component decoupled from the main CV stack}
+        \resumeItem{Built GaitID, a contactless biometric system for physical access control that identifies individuals from walking patterns; fused skeletal graph features (GCN), temporal motion (LSTM), and appearance features (3D-CNN) into a single TensorRT-optimized pipeline delivering 28 FPS at 95\% rank-1 accuracy across two large-scale benchmarks}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Machine Learning Intern}{Jun 2022 -- Sep 2022}
+      {Electronic System Design Automation Centre (ESDAC)}{Islamabad, PK}
+      \resumeItemListStart
+        \resumeItem{Built a CV inference pipeline for automated industrial fringe pattern detection on edge hardware (Jetson Nano, Raspberry Pi); TensorRT FP16 quantization achieved 3x speedup at 91\% detection accuracy with 25\% reliability gain via classical signal processing integration}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+        {\textbf{ScholarAgent -- Multimodal RAG Research Assistant} $|$ \emph{QLoRA, VLMs, RAG, vLLM, Qdrant, MCP}}{2026}
+        \resumeItemListStart
+            \resumeItem{Production multimodal research assistant for grounded scientific Q\&A over PDFs; QLoRA fine-tuned Qwen3.5-9B with two-stage visual retrieval and MCP tool-calling agents; LoRA weights released on Hugging Face; evaluated on QASPER, SciFact, DocVQA, ChartQA, SPIQA $|$ \href{https://github.com/AliSubhan5341/scholarAgent}{\underline{GitHub}}}
+        \resumeItemListEnd
+
+
+      \resumeProjectHeading
+          {\textbf{RouteMind -- Agentic Multi-Agent Travel Planning System} $|$ \emph{LangGraph, DeepSeek-R1, Tool Calling}}{2026}
+          \resumeItemListStart
+            \resumeItem{Designed a stateful multi-agent system where 3 specialized ReAct agents (transport, accommodation, activities) run in parallel and share context via LangGraph; each agent reasons over its domain before a coordinator synthesizes a final bookable itinerary}
+            \resumeItem{Integrated 5 live travel APIs (flights, hotels, maps, weather, booking) via structured tool-calling with Pydantic schema validation, retry logic, and fallback routing -- reducing planning time by ${\sim}$70\% vs.\ manual search at under 3s end-to-end latency $|$ \href{https://github.com/AliSubhan5341/routemind}{\underline{GitHub}}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{DocQuery -- RAG Pipeline for Adaptive Knowledge Assessment} $|$ \emph{LangChain, FAISS, Groq, SerpAPI}}{2025}
+          \resumeItemListStart
+            \resumeItem{Built a hybrid RAG system that routes queries to either FAISS dense retrieval over ingested documents or live SerpAPI web search based on query classification; achieved over 85\% answer relevance across 10+ topic domains}
+            \resumeItem{Added an LLM-based question generation layer that produces context-grounded MCQs and open-ended questions with automated difficulty scoring; structured output generation reduced hallucination rate by 40\% over a vanilla LLM baseline $|$ \href{https://github.com/AliSubhan5341/llm-quizgen}{\underline{GitHub}}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Leo -- Voice-Enabled Conversational AI Shopping Assistant} $|$ \emph{LangChain, LLMs, ElevenLabs TTS, ROS}}{2024}
+          \resumeItemListStart
+            \resumeItem{Built a conversational AI system on a physical retail robot: an LLM manages multi-turn dialogue, a knowledge base answers product and aisle queries, and ROS translates navigation intents into physical robot commands}
+            \resumeItem{Integrated ElevenLabs TTS for natural voice responses at under 500ms latency; the system handled 50+ distinct query types with over 90\% intent recognition accuracy in noisy retail environments $|$ \href{https://github.com/AliSubhan5341/shopping-mall-robot}{\underline{GitHub}}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{SynthPAD -- Synthetic Data Generation for Face Anti-Spoofing} $|$ \emph{PyTorch, LoRA, FLUX, SDXL, PEFT}}{2026}
+          \resumeItemListStart
+            \resumeItem{Fine-tuned FLUX and SDXL diffusion models with LoRA adapters to generate 5 types of face spoof attacks (print, replay, 3D mask, partial, digital); IP-Adapter conditioning preserved subject identity across 20+ identities, producing 50K+ synthetic training samples}
+            \resumeItem{Models trained exclusively on synthetic data matched real-data baselines within 2\% ACER; augmenting real datasets with synthetic samples improved cross-domain HTER by 8.3\% and AUC by 4.1\% on held-out benchmarks $|$ \href{https://github.com/AliSubhan5341/synthpad}{\underline{GitHub}}}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\vspace{-2pt}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{What If We Allocate Test-Time Compute Adaptively?} & \textbf{ICML 2026} \\
+\multicolumn{2}{l}{\small A. Bilal, M. A. Mohsin, M. Umer, \textbf{A. Subhan}, H. Rizwan, A. Mohsin, D. F. Hougen \quad \href{https://arxiv.org/abs/2602.01070}{\textit{[arXiv]}}}
+\end{tabular*}
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{On the Fundamental Limits of LLMs at Scale} & \textbf{TMLR} \\
+\multicolumn{2}{l}{\small M. A. Mohsin, M. Umer, A. Bilal, \textbf{A. Subhan} et al. \quad \href{https://arxiv.org/abs/2511.12869}{\textit{[arXiv]}}}
+\end{tabular*}
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Synthetic Data Generation for Face Anti-Spoofing Using Conditional Generative Models} & \textbf{Under Review} \\
+\multicolumn{2}{l}{\small \textbf{A. Subhan}, P. Peer, Z. Emersic, J. Sabadin}
+\end{tabular*}
+\end{itemize}
+\vspace{-2pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheadingWithNote
+  {Erasmus Mundus Joint Master in Artificial Intelligence (EMAI)}{Barcelona, Spain}
+  {Master of Science in Artificial Intelligence}{Sep 2024 -- Present}
+\small{Joint degree awarded by:}
+\begin{itemize}[leftmargin=0.30in, itemsep=1pt, topsep=2pt, parsep=0pt, partopsep=0pt]
+  \small\item Universitat Pompeu Fabra, Barcelona
+  \small\item Sapienza Universita di Roma
+  \small\item University of Ljubljana
+\end{itemize}
+\vspace{2pt}
+\resumeSubheading
+  {National University of Sciences and Technology (NUST)}{Islamabad, Pakistan}
+  {Bachelor of Electrical Engineering}{Sep 2020 -- Aug 2024}
+\resumeSubHeadingListEnd
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Erasmus Mundus Joint Masters Scholarship (EU)} -- Fully funded, merit-based EU scholarship awarded to top international AI candidates \hfill 2024 \\
+     \textbf{Best Industry Project Award} -- NUST Open House 2024, recognized for outstanding applied engineering impact \hfill 2024 \\
+     \textbf{2nd Position (Board Merit)} -- Ranked 2nd among all candidates in Intermediate Examinations, BISE \hfill 2020 \\
+     \textbf{Quaid-e-Azam Scholarship} -- Awarded for sustained academic excellence by Government of Pakistan \hfill 2020
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
