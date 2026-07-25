@@ -1,0 +1,209 @@
+%-------------------------
+% Resume in Latex
+% Author : Haris Waheed Bhatti
+% Based off of: https://github.com/jakegut/resume, structural conventions adapted from ali_subhan.tex
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeSubheadingWithNote}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+}
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Haris Waheed Bhatti} \\ \vspace{1pt}
+    \small Ljubljana, Slovenia $|$ (+386) 69437910 $|$ \href{mailto:harisw95@gmail.com}{\underline{harisw95@gmail.com}} $|$ \href{https://linkedin.com/in/bhatti25}{\underline{linkedin.com/in/bhatti25}} $|$ \href{https://github.com/alfarseniko}{\underline{github.com/alfarseniko}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{BIM and digital construction specialist completing a European Master's in Building Information Modelling at the University of Ljubljana, building on a Bachelor's in Civil Engineering from NUST, Pakistan. Work spans IFC-to-Neo4j knowledge graph pipelines with LLM-based retrieval (built with Claude), and blockchain-based construction document management. Based in Ljubljana, Slovenia with full-time work rights under a Slovenian residence permit; open to BIM Software Developer, BIM Manager, Information Manager, and Digital Construction Specialist roles.}
+\vspace{4pt}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{BIM \& AEC Tools}{: IFC, Revit, Dynamo, Blender, Autodesk Construction Cloud, Three.js, WebIFC} \\
+     \textbf{Programming \& Data}{: TypeScript, Python, Solidity, Neo4j, Knowledge Graphs} \\
+     \textbf{AI \& LLM}{: Claude, Retrieval-Augmented Generation (RAG), Artificial Intelligence} \\
+     \textbf{Languages}{: Urdu (Native), English (Fluent)}
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Contract Management Intern}{07/08/2023 -- 01/09/2023}
+      {Engineering and Management Services}{Pakistan}
+      \resumeItemListStart
+        \resumeItem{Reviewed construction contract reports and arbitration case documentation under \textbf{FIDIC} conditions, and presented findings on FIDIC and arbitration procedures to the internal legal team}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Intern \emph{(Part-time, Remote -- Concurrent with Above)}}{17/07/2023 -- 24/08/2023}
+      {Southern Illinois University Edwardsville}{USA}
+      \resumeItemListStart
+        \resumeItem{Extracted and synthesized findings from academic articles and abstracts to support a faculty-mentored research proposal, applying feedback to refine presentation and analysis technique $|$ Supervisor: \href{https://www.linkedin.com/in/saadullah1/}{\underline{linkedin.com/in/saadullah1}}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Civil Engineering Intern}{11/07/2023 -- 04/08/2023}
+      {Fatima Fertilizer Company}{Pakistan}
+      \resumeItemListStart
+        \resumeItem{Modeled a 42m x 162m (6,804 m\textsuperscript{2}) rock phosphate storage shed independently in 3D from 2D drawings, coordinating with stakeholders to refine the design}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{IFC Knowledge Graph \& RAG Pipeline} $|$ \emph{Neo4j, LLMs, IFC, Claude} $|$ \emph{Master's Thesis}}{2026}
+          \resumeItemListStart
+            \resumeItem{Modeling IFC building data as a property graph in \textbf{Neo4j}, preserving hierarchical and relational structures of BIM entities}
+            \resumeItem{Implementing a \textbf{RAG architecture} combining LLMs and graph retrieval to enable semantic querying and knowledge discovery within BIM datasets, built with \textbf{Claude} for AI-assisted development}
+            \resumeItem{Building an automated pipeline for IFC ingestion and graph serialization, supporting bidirectional data flow between BIM files and graph environments}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Pakistani-Themed Expo BIM Management} $|$ \emph{IFC, Autodesk Construction Cloud}}{2024}
+          \resumeItemListStart
+            \resumeItem{Spearheaded a BIM management project for a Pakistani-themed expo in Guimarães, Portugal, leveraging \textbf{IFC} and \textbf{Autodesk Construction Cloud} to develop a comprehensive technical design}
+            \resumeItem{Facilitated collaboration between Architecture and MEP disciplines, creating a \textbf{federated model} that integrated diverse design inputs; conducted \textbf{clash detection} and compliance checks against all information requirements}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Blockchain-Based BIM Document Management} $|$ \emph{Solidity} $|$ \emph{Bachelor's Thesis}}{2024}
+          \resumeItemListStart
+            \resumeItem{Developed a \textbf{Solidity} smart contract to digitally sign and manage construction documents, with off-chain storage linked to the blockchain for immutability and transparency, funded by a \textbf{PKR 100,000 grant} from the Pakistan Engineering Council $|$ \href{https://sepolia.arbiscan.io/address/0x8535f1840d47b65ab11ac7d95b5430d017a4c867\#code}{\underline{Contract}}}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Ljubljana}{Slovenia}
+    {European Master in Building Information Modelling}{15/11/2025 -- 30/09/2026}
+    \resumeItemListStart
+      \resumeItem{Field of study: Information Management in Construction. Thesis: IFC-to-Neo4j knowledge graph with LLM-based RAG pipeline (see Projects)}
+    \resumeItemListEnd
+  \resumeSubheading
+    {National University of Science and Technology}{Pakistan}
+    {BE Civil Engineering}{09/2020 -- 06/2024}
+    \resumeItemListStart
+      \resumeItem{Final grade: 3.25/4.00. Thesis: Blockchain-based BIM document management (see Projects)}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Pakistan Engineering Council Grant (PKR 100,000)} -- Awarded for final-year blockchain-based BIM thesis project \hfill 2024 \\
+     \textbf{Director, School Orientation Committee} -- Coordinated logistics and onboarding programming for incoming student cohorts, NUST \hfill 2020--2024 \\
+     \textbf{President, NUST 3v3 Madness Basketball Tournament} -- Organized team registration and event logistics for a university-wide competition \hfill 2020--2024 \\
+     \textbf{Coursera: Supervised Machine Learning -- Regression and Classification} -- DeepLearning.AI \hfill 2023 \\
+     \textbf{Coursera: Management of Urban Infrastructures -- Part 1} -- EPFL \hfill 2024 \\
+     \textbf{Coursera: Innovative Governance of Large Urban Systems} \hfill 2024
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
