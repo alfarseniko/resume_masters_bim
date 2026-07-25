@@ -122,7 +122,7 @@
       {University of Ljubljana, UL FGG}{Slovenia}
       \resumeItemListStart
         \resumeItem{Field of study: Information Management in Construction}
-        \resumeItem{\textbf{Thesis:} \emph{Graph-Mediated LLM Exploration for IFC Question Answering}. Supervisor: Prof.\ \v{Z}iga Turk}
+        \resumeItem{\textbf{Thesis:} \emph{Graph-Mediated LLM Exploration for IFC Question Answering: A Benchmark Comparison Against Direct-IFC Approaches}. Supervisor: Prof.\ \v{Z}iga Turk}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -143,11 +143,12 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{BIMGraphExplorer} $|$ \emph{Neo4j, Python, IfcOpenShell, LLM agents}}{2026}
+          {\textbf{BIMGraphExplorer} $|$ \emph{Neo4j, Cypher, Python, IfcOpenShell, MCP}}{2026}
           \resumeItemListStart
-            \resumeItem{Built an automated IFC-to-Neo4j ingestion pipeline mapping building models to property graphs via Linked Building Data ontologies, preserving BIM hierarchy and relational structure}
-            \resumeItem{Developed an agentic retrieval system in which the LLM plans and issues iterative Cypher queries to traverse the graph adaptively, rather than retrieving from a fixed vector index}
-            \resumeItem{Benchmarked against a published IfcOpenShell baseline on ifc-bench v2 -- 514 questions across 23 project datasets, scored against a five-criterion rubric}
+            \resumeItem{Published \texttt{ifctoneo4j}, a Python package converting IFC (IFC2X3, IFC4, IFC4X3) into \textbf{Neo4j} property graphs under the Linked Building Data ontologies with no RDF intermediate}
+            \resumeItem{Built an adaptive querying system exposing four read-only tools over the Model Context Protocol, in which the model profiles the graph schema and issues iterative Cypher queries conditioned on prior results}
+            \resumeItem{Ran a controlled benchmark against a published direct-IFC baseline at matched model, matched validated judge, and matched scope of 23 IFC datasets (367 questions, 15 projects): 72.0 \% versus 82.3 \% accuracy, transparency at parity (99.7 \% versus 100 \%), and outright wins on 5 of 23 datasets}
+            \resumeItem{Raised accuracy by 33 percentage points on a fixed model and fixed dataset through prompt design alone, lifting source-transparency from 12.5 \% to 99.7 \%}
           \resumeItemListEnd
 
       \resumeProjectHeading
