@@ -34,8 +34,8 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
 
@@ -45,8 +45,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -64,7 +64,7 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-9pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -78,7 +78,7 @@
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-9pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -87,8 +87,8 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -111,6 +111,18 @@
 %-----------PROFILE-----------
 \section{Profile}
     \small{BIM and digital construction specialist completing a European Master's in Building Information Modelling at the University of Ljubljana, building on a Bachelor's in Civil Engineering from NUST, Pakistan. Experienced across IFC-to-graph-database pipelines and blockchain-based construction document management. Seeking roles such as \textbf{Information Manager}, \textbf{BIM Specialist}, \textbf{AI in BIM}, or \textbf{IFC Expert} in Slovenia.}
+
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{BIM \& AEC}{: IFC, IfcOpenShell, Revit, Dynamo, Blender, Autodesk Construction Cloud, Three.js, WebIFC} \\
+     \textbf{Programming \& Data}{: Python, TypeScript, Solidity, Neo4j, Cypher, knowledge graphs, Git, LaTeX} \\
+     \textbf{AI / LLM}{: agentic systems, Claude Agent SDK, MCP, LLM evaluation and benchmarking} \\
+     \textbf{Languages}{: Urdu (native), English (fluent)}
+    }}
+ \end{itemize}
 
 
 %-----------EDUCATION-----------
@@ -189,50 +201,6 @@
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
-
-%-----------SKILLS-----------
-\section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{BIM \& AEC}{: IFC, IfcOpenShell, Revit, Dynamo, Blender, Autodesk Construction Cloud, Three.js, WebIFC} \\
-     \textbf{Programming \& Data}{: Python, TypeScript, Solidity, Neo4j, Cypher, knowledge graphs, Git, LaTeX} \\
-     \textbf{AI / LLM}{: agentic systems, Claude Agent SDK, MCP, LLM evaluation and benchmarking} \\
-     \textbf{Languages}{: Urdu (native), English (fluent)}
-    }}
- \end{itemize}
-
-
-%-----------LEADERSHIP & ACTIVITIES-----------
-\section{Leadership \& Activities}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Leadership \& Extracurricular Activities}{2020 -- 2024}
-      {National University of Science and Technology}{Pakistan}
-      \resumeItemListStart
-        \resumeItem{\textbf{Director, School Orientation Committee:} Coordinated logistics and onboarding programming for incoming student cohorts during NUST Orientation}
-        \resumeItem{\textbf{President, NUST 3v3 Madness Basketball Tournament:} Organized team registration and event logistics for a university-wide competition}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-
-%-----------CERTIFICATIONS-----------
-\section{Certifications}
-    \textbf{\small Coursera Certificates}
-    \resumeSubHeadingListStart
-
-      \resumeProjectHeading
-          {\textbf{Supervised Machine Learning: Regression and Classification}, DeepLearning.AI $|$ \href{https://coursera.org/verify/T9ZJ8HYJX2E7}{Verify}}{19/02/2023}
-
-      \resumeProjectHeading
-          {\textbf{Management of Urban Infrastructures -- Part 1}, EPFL $|$ \href{https://coursera.org/verify/MWW4ZWUXSTDP}{Verify}}{15/02/2024}
-
-      \resumeProjectHeading
-          {\textbf{Innovative Governance of Large Urban Systems}, EPFL $|$ \href{https://coursera.org/verify/3VNHK3YRQ7MZ}{Verify}}{21/02/2024}
-
-    \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
