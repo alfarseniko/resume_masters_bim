@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Haris Waheed Bhatti
+% Based off of: https://github.com/jakegut/resume (https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Haris Waheed Bhatti} \\ \vspace{4pt}
+    \small Ljubljana, Slovenia $|$ +386 69 437 910 $|$
+    \href{mailto:harisw95@gmail.com}{\underline{harisw95@gmail.com}} \\ \vspace{2pt}
+    \small \href{https://www.linkedin.com/in/bhatti25/}{\underline{linkedin.com/in/bhatti25}} $|$
+    \href{https://github.com/alfarseniko}{\underline{github.com/alfarseniko}} \\ \vspace{4pt}
+    \small \textit{Resident in Slovenia with full-time work rights; post-study residence permit from 09/2026. EU Blue Card eligible.}
+\end{center}
+
+
+%-----------PROFILE-----------
+\section{Profile}
+    \small{Software-focused engineer building tooling for the AEC industry, working at the intersection of IFC schemas, graph databases, and LLM agent systems. Author of a published open-source Python package for IFC-to-Neo4j conversion; MSc research benchmarked graph-mediated LLM retrieval against a published direct-IFC baseline.}
+
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming \& Data}{: Python, TypeScript, Solidity, Neo4j, Cypher, knowledge graphs, Git, LaTeX} \\
+     \textbf{AI / LLM}{: Agentic systems, Model Context Protocol (MCP), RAG, LLM evaluation and benchmarking} \\
+     \textbf{BIM \& AEC}{: IFC (IFC2X3, IFC4, IFC4X3), IfcOpenShell, Linked Building Data ontologies, Revit, Dynamo, Blender, Autodesk Construction Cloud, Three.js, web-ifc} \\
+     \textbf{Languages}{: Urdu (native), English (fluent), Slovene (A1)}
+    }}
+ \end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{ifctoneo4j} -- Python package (PyPI) $|$ \emph{Python, IfcOpenShell, Neo4j, Cypher}}{2026}
+          \resumeItemListStart
+            \resumeItem{Open-source library converting IFC models (IFC2X3, IFC4, IFC4X3) into \textbf{Neo4j} property graphs aligned to Linked Building Data ontologies, with no RDF intermediate. Published and installable via \texttt{pip install ifctoneo4j}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{BIMGraphExplorer} -- LLM agent for IFC question answering $|$ \emph{Python, MCP, Neo4j}}{2026}
+          \resumeItemListStart
+            \resumeItem{Adaptive querying system exposing four read-only tools over the Model Context Protocol; the model profiles the graph schema and issues iterative Cypher queries conditioned on prior results}
+            \resumeItem{Ran a controlled benchmark against a published direct-IFC baseline at matched model, matched validated judge, and matched scope (23 IFC datasets, 367 questions, 15 projects): 72.0 \% versus 82.3 \% accuracy, transparency at parity (99.7 \% versus 100 \%), and outright wins on 5 of 23 datasets}
+            \resumeItem{Raised accuracy by 33 percentage points on a fixed model and dataset through prompt design alone, lifting source-transparency from 12.5 \% to 99.7 \%}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Blockchain-Based BIM Document Management} $|$ \emph{Solidity, Ethereum (Arbitrum Sepolia)}}{2024}
+          \resumeItemListStart
+            \resumeItem{Smart contract system to digitally sign and manage construction documents, with off-chain storage linked on-chain for immutability, designed to streamline dispute resolution under \textbf{FIDIC} contracts; funded by a competitive PKR 100,000 grant from the Pakistan Engineering Council}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Federated BIM Model} -- Pakistani-Themed Expo, Guimarães $|$ \emph{IFC, Autodesk Construction Cloud}}{2024}
+          \resumeItemListStart
+            \resumeItem{Led BIM coordination across architecture and MEP disciplines; delivered a federated model with clash detection and information-requirement compliance}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {European Master in Building Information Modelling (BIM A+)}{10/2025 -- 07/2026}
+      {University of Ljubljana, UL FGG}{Slovenia}
+      \resumeItemListStart
+        \resumeItem{Field of study: Information Management in Construction; completed in 10 months via an accelerated thesis track}
+        \resumeItem{\textbf{Thesis:} \emph{Graph-Mediated LLM Exploration for IFC Question Answering: A Benchmark Comparison Against Direct-IFC Approaches}. Supervisor: Prof.\ \v{Z}iga Turk}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {BE Civil Engineering}{09/2020 -- 06/2024}
+      {National University of Sciences and Technology (NUST)}{Pakistan}
+      \resumeItemListStart
+        \resumeItem{CGPA: 3.25/4.00}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Part-time Employment}{02/2025 -- 07/2026}
+      {}{Ljubljana, Slovenia}
+      \resumeItemListStart
+        \resumeItem{Worked evenings and weekends throughout MSc studies to self-fund living costs in Slovenia}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Contract Management Intern}{08/2023 -- 09/2023}
+      {Engineering and Management Services}{Pakistan}
+      \resumeItemListStart
+        \resumeItem{Reviewed contract reports and arbitration documentation under \textbf{FIDIC} conditions; presented findings to the internal legal team}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Intern \emph{(Remote)}}{07/2023 -- 08/2023}
+      {Southern Illinois University Edwardsville}{USA}
+      \resumeItemListStart
+        \resumeItem{Synthesised academic literature to support a faculty-mentored research proposal}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Civil Engineering Intern}{07/2023 -- 08/2023}
+      {Fatima Fertilizer Company}{Pakistan}
+      \resumeItemListStart
+        \resumeItem{Modelled a 6,804 m\textsuperscript{2} rock phosphate storage shed in 3D from 2D drawings, coordinating with stakeholders on design refinement}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
