@@ -3,11 +3,13 @@
 
 Hi Metod,
 
-I hope you're doing well. I recently finished my Master's in Building Information Modelling in Ljubljana, and given your work on BIM and digitalization at Kolektor, I wanted to reach out about student work over the next couple of months.
+I recently finished my European Master's in BIM A+, two months ahead of schedule — I have about two months of student status left, and I'd love to spend it gaining real experience in the Slovenian construction industry.
 
-I've been writing software since I was 20 — bootcamps after my Bachelor's, several projects on GitHub, and my thesis itself was a fully code-driven BIM/graph-database project. I'd love to bring that combination to whatever Kolektor's digitalization team is building.
+My background is software for construction, but I'd really welcome an introduction to other departments too — long term, I want to commit and grow across multiple disciplines at Kolektor, not just digitalization.
 
-I'm available as a student through the end of September. Would you be up for a quick chat about whether there's something I could help with in the meantime?
+I've been picking up Slovene in the evenings (A1 so far), and I'm committed to reaching fluency within two years if I stay. I learn fast and tend to throw myself fully at whatever I take on — finishing this Master's early is one example.
+
+Looking forward to hearing from you.
 
 Best,
 Haris
