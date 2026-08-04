@@ -1,0 +1,12 @@
+Subject: Application — Junior Civil Designer, Integrated Infrastructure Design
+
+Dear Mr. Koelman and Mr. van Breukelen,
+
+I'm writing to apply for the Junior Civil Designer position with your Integrated Infrastructure Design team. I hold a Master's in Building Information Modelling from the University of Ljubljana, built on a Bachelor's in Civil Engineering, with hands-on experience in 3D design and automating design workflows with AI.
+
+I owned a federated BIM model's clash-detection workflow for a multidisciplinary project, validated against Employer's Information Requirements under ISO 19650, and built an LLM-based agent for structured, traceable querying of BIM data — the kind of digitalization and automation thinking I understand is central to how your team approaches design.
+
+I'd welcome the opportunity to discuss how my background could contribute to your team.
+
+Best regards,
+Haris Waheed Bhatti
