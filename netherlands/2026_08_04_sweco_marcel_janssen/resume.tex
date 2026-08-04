@@ -1,0 +1,143 @@
+%==============================================================================
+%  HARIS WAHEED BHATTI -- CV
+%  VARIANT: BIM Coordinator / Information Manager (ISO 19650)
+%  Compile with pdflatex. Standalone; no switch.
+%==============================================================================
+\documentclass[a4paper,10.5pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{courier}   % Type 1 mono; without it \texttt falls back to a Type 3 bitmap
+\input{glyphtounicode}
+\pdfgentounicode=1
+\usepackage[left=1.4cm,right=1.4cm,top=1.0cm,bottom=1.0cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\raggedright
+\hyphenpenalty=10000 \exhyphenpenalty=10000 \hbadness=10000 \sloppy
+
+\titleformat{\section}{\large\bfseries\MakeUppercase}{}{0em}{}[\vspace{-6pt}\rule{\textwidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,nosep,topsep=1pt,parsep=0pt,itemsep=1pt}
+
+\newcommand{\datefill}{\dotfill}
+\newcommand{\entry}[3]{\vspace{2.5pt}\noindent\textbf{#1} \textbar{} #2 \datefill{} #3\par\vspace{0.5pt}}
+\newcommand{\skillrow}[2]{\noindent\textbf{#1:} #2\par\vspace{1pt}}
+
+ \newcommand{\ROLELINE}{BIM Specialist \textbar{} Information Manager (ISO 19650)}
+
+\hypersetup{pdftitle={Haris Waheed Bhatti - CV}, pdfauthor={Haris Waheed Bhatti},
+            pdfsubject={\ROLELINE}}
+
+\newcommand{\projIfcToNeo}{%
+\entry{ifctoneo4j -- Python package (PyPI)}{Python, IfcOpenShell, Neo4j, Cypher}{2026}
+\begin{itemize}
+  \item Open-source library converting IFC models (IFC2X3, IFC4, IFC4X3) into Neo4j
+        property graphs aligned to Linked Building Data ontologies, with no RDF
+        intermediate. Published to PyPI: \texttt{pip install ifctoneo4j}.
+\end{itemize}}
+
+\newcommand{\projBIMGraph}{%
+\entry{BIMGraphExplorer -- LLM agent for IFC question answering}{Python, MCP, Neo4j}{2026}
+\begin{itemize}
+  \item Adaptive querying system exposing four read-only tools over the Model
+        Context Protocol; profiles the graph schema and issues iterative Cypher
+        queries conditioned on prior results.
+  \item Raised answer accuracy by 33 percentage points and source transparency from
+        12.5\% to 99.7\% on a fixed model and dataset, through prompt design alone.
+  \item Benchmarked against a published direct-IFC baseline under matched
+        conditions (same model, same validated judge; 23 IFC datasets, 367
+        questions, 15 projects). Overall accuracy 72.0\% against the baseline's
+        82.3\%, but reached source-transparency parity (99.7\% versus 100\%) and
+        outperformed it on 5 of 23 datasets, by up to 24 points on one.
+\end{itemize}}
+
+\newcommand{\projGuimaraes}{%
+\entry{Federated BIM Model -- Pakistani-Themed Expo, Guimar\~aes}{IFC, Autodesk Construction Cloud}{Oct 2025}
+\begin{itemize}
+  \item Owned the federated model and clash-detection workflow across architecture
+        and MEP disciplines, validated against Employer's Information Requirements
+        under ISO 19650.
+\end{itemize}}
+
+\newcommand{\projBlockchain}{%
+\entry{Blockchain-Based BIM Document Management}{Solidity, Ethereum (Arbitrum Sepolia)}{2024}
+\begin{itemize}
+  \item Smart contract system to sign and manage construction documents, with
+        immutable on-chain linkage, to streamline dispute resolution under FIDIC
+        contracts. Funded by a competitive grant from the
+        Pakistan Engineering Council.
+\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries HARIS WAHEED BHATTI}\\[2pt]
+  {\large \ROLELINE}\\[3pt]
+  Ljubljana, Slovenia \textbar{} +386 69 437 910 \textbar{} harisw95@gmail.com\\
+  \href{https://linkedin.com/in/bhatti25}{linkedin.com/in/bhatti25} \textbar{}
+  \href{https://github.com/alfarseniko}{github.com/alfarseniko}
+\end{center}
+\vspace{-4pt}
+\noindent\small Open to relocating to the Netherlands; available immediately.\normalsize
+
+\section{Profile}
+
+\noindent Civil engineer with a European Master's in Building Information Modelling and
+Bachelor's coursework in geographic information systems (ArcGIS) and water
+resources engineering, with a strong digitalization and AI background. Built an
+LLM-based agent for structured, traceable data querying, and coordinated on-site
+design refinement and quality monitoring during an industrial engineering
+internship.
+
+\section{Projects}
+
+ \projGuimaraes \projIfcToNeo \projBIMGraph
+
+\section{Education}
+\entry{MSc, European Master in BIM (BIM A+)}{UL FGG, Ljubljana, Slovenia}{Oct 2025 -- Jul 2026}
+\begin{itemize}
+  \item Field of study: Information Management in Construction. Completed the
+        accelerated thesis track, finishing full MSc requirements in 10 months.
+        Final grade 9.27/10.
+  \item Thesis: \textit{Graph-Mediated LLM Exploration for IFC Question Answering:
+        A Benchmark Comparison Against Direct-IFC Approaches}. Supervisor:
+        Prof.~\v{Z}iga Turk. \href{http://hdl.handle.net/20.500.12556/RUL-185169}{hdl.handle.net/20.500.12556/RUL-185169}
+  \item Applied coursework spanning the BIM delivery chain: IFC schema auditing and model remediation, parametric façade optimisation in Dynamo, process modelling and workflow improvement, 5D quantity take-off and cost estimation, and scan-to-BIM from point-cloud capture.
+\end{itemize}
+
+\entry{BE Civil Engineering}{NUST, Islamabad, Pakistan. Final grade 3.25/4.00}{Sep 2020 -- Jun 2024}
+\begin{itemize}
+  \item Coursework in hydrology and water resources engineering, including hydraulic
+        modelling with AutoCAD, HEC-HMS and HEC-RAS.
+\end{itemize}
+
+\section{Experience}
+\entry{Civil Engineering Intern}{Fatima Fertilizer Company, Pakistan}{July 2023}
+\begin{itemize}
+  \item Modelled a 6,804~m\textsuperscript{2} rock phosphate storage shed in 3D from
+        2D drawings, coordinating with stakeholders on design refinement.
+\end{itemize}
+
+\entry{Contract Management Intern}{Engineering and Management Services, Pakistan}{June 2023}
+\begin{itemize}
+  \item Reviewed contract reports and arbitration documentation under FIDIC
+        conditions; presented findings to the internal legal team.
+\end{itemize}
+
+\entry{Research Intern (remote)}{Southern Illinois University Edwardsville, USA}{July 2023}
+\begin{itemize}
+  \item Synthesised academic literature to support a faculty-mentored research proposal.
+\end{itemize}
+
+\section{Skills}
+
+\skillrow{BIM \& AEC}{AutoCAD, ArcGIS, HEC-HMS, HEC-RAS, IFC (IFC2X3, IFC4, IFC4X3), ISO 19650, Employer's Information Requirements, clash detection, federated models, Revit, Dynamo, Autodesk Construction Cloud}
+\skillrow{Programming \& Data}{Python, TypeScript, Neo4j, Cypher, knowledge graphs, Git}
+\skillrow{AI / LLM}{Agentic systems, Model Context Protocol (MCP), RAG, LLM evaluation and benchmarking}
+
+\skillrow{Languages}{English (C1)}
+
+\end{document}
