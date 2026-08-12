@@ -1,0 +1,12 @@
+Subject: Application for Graduate Digital Construction & Data Management (JR18262)
+
+Dear Ferrovial Construction Team,
+
+I'm writing to apply for the Graduate Digital Construction & Data Management position in London. I hold a European Master's in Building Information Modelling from the University of Ljubljana, built on a Bachelor's in Civil Engineering, with hands-on experience structuring and managing project data.
+
+I built an open-source tool converting IFC models into structured, queryable graph databases, and owned a federated BIM model's clash-detection workflow across architecture and MEP disciplines, using Autodesk Construction Cloud as a common data environment and validating deliverables against Employer's Information Requirements under ISO 19650. During an internship, I also reviewed contract reports and arbitration documentation under FIDIC conditions, which gave me a working understanding of formal contract frameworks I'm keen to build on with NEC and JCT. I will have the right to work in the UK by the start of employment.
+
+I'd welcome the opportunity to discuss how my background could contribute to your Quality and Design team.
+
+Best regards,
+Haris Waheed Bhatti
