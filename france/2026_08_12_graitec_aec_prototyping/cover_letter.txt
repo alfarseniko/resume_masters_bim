@@ -1,0 +1,12 @@
+Subject: Application for AEC Prototyping Engineer
+
+Dear Graitec Innovation Team,
+
+I'm writing to apply for the AEC Prototyping Engineer position in Paris. I hold a European Master's in Building Information Modelling from the University of Ljubljana, built on a Bachelor's in Civil Engineering, combining AEC domain knowledge with hands-on rapid prototyping in Python, APIs and agentic AI workflows.
+
+For my thesis, I built an LLM-based prototype for IFC/BIM data querying using the Model Context Protocol, then validated and iterated on it through prompt design alone, benchmarking it against a published baseline across 23 IFC datasets and 367 questions. This is exactly the intake-to-validation cycle your role describes: framing a real AEC problem, building a working prototype quickly, and improving it based on measured feedback. I also published an open-source tool converting IFC models into queryable graph databases, and delivered a federated BIM coordination workflow validated under ISO 19650.
+
+I'd welcome the opportunity to discuss how my background could contribute to your Innovation Team.
+
+Best regards,
+Haris Waheed Bhatti
