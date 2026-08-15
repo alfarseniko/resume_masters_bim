@@ -1,0 +1,12 @@
+Subject: Application for BIM & Digital Specialist, Madrid (Req J10154523)
+
+Dear AECOM Digital & Engineering Technology Team,
+
+I'm writing to apply for the BIM & Digital Specialist position in Madrid. I hold a European Master's in Building Information Modelling from the University of Ljubljana, built on a Bachelor's in Civil Engineering, bridging BIM coordination with data pipelines and automation.
+
+I owned a federated BIM model's clash-detection workflow across architecture and MEP disciplines using Autodesk Construction Cloud, validated under ISO 19650, and built Python-based tools converting IFC data into structured, queryable graph databases, including a published open-source package and version-controlled development on GitHub. I have a strong grounding in interoperability (IFC, APIs), scripting and automation, and I pick up new platforms quickly.
+
+I'd welcome the opportunity to discuss how my background could contribute to your team.
+
+Best regards,
+Haris Waheed Bhatti
