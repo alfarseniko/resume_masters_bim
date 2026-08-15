@@ -1,0 +1,12 @@
+Subject: Interest in TwinMaster, from a non-traditional angle
+
+Hi Michael,
+
+I want to be upfront: I'm not the licensed architect with 7 years as Project Architect or Architect of Record that this role is written for, and I don't want to waste your time pretending otherwise. I'm a recent graduate, a civil engineer with a European Master's in Building Information Modelling from the University of Ljubljana.
+
+What made me reach out anyway is that Arch-e sits exactly on top of the technical stack I have hands-on experience with: I've built a federated BIM coordination workflow validated under ISO 19650, published an open-source tool that converts IFC models into structured graph databases, and built an LLM-based agent for querying BIM data, benchmarked against a published baseline. If there is ever a fit for someone closer to the ground, on the engineering, data or BIM-integration side of what you are building rather than the customer-facing Product Manager seat, I would welcome the chance to talk.
+
+Either way, I think what you are building is genuinely interesting, and I wanted to put myself on your radar.
+
+Best regards,
+Haris Waheed Bhatti
