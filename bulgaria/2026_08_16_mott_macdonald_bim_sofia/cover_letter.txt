@@ -1,0 +1,12 @@
+Subject: Application for BIM Engineer, Sofia (Job Ref 15395)
+
+Dear Ms. Cervantes,
+
+I'm writing to apply for the BIM Engineer position with your Energy unit in Sofia. I hold a Master's in Building Information Modelling from the University of Ljubljana, built on a Bachelor's in Civil Engineering, with hands-on experience modelling in Revit and setting up project environments in Autodesk Construction Cloud.
+
+I owned a federated BIM model's clash-detection workflow across architecture and MEP disciplines for a multidisciplinary project, implementing ISO 19650 information management principles and quality assurance workflows, and validating deliverables against Employer's Information Requirements. I also bring a strong programming background in Python, which I understand supports the automation of modelling and processing work your team values.
+
+I'd welcome the opportunity to discuss how my background could contribute to your BIM practice.
+
+Best regards,
+Haris Waheed Bhatti
