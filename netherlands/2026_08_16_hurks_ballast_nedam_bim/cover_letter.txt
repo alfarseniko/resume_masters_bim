@@ -1,0 +1,12 @@
+Subject: Application for BIM Coordinator, Hurks Eindhoven
+
+Dear Ms. den Haan,
+
+I'm writing to apply for the BIM Coordinator position at Hurks in Eindhoven. I hold a Master's in Building Information Modelling from the University of Ljubljana, built on a Bachelor's in Civil Engineering, with hands-on experience coordinating BIM models and connecting design, preparation and execution.
+
+I owned a federated BIM model's clash-detection workflow across architecture and MEP disciplines for a multidisciplinary project, validated against Employer's Information Requirements under ISO 19650, and built an LLM-based agent for structured, traceable BIM data querying. I'm genuinely drawn to how Hurks is thinking about digitalization, automation and AI in construction, and I'd bring both hands-on BIM coordination skills and a strong technical foundation for that direction.
+
+I'd welcome the opportunity to discuss how my background could contribute to your team.
+
+Best regards,
+Haris Waheed Bhatti
