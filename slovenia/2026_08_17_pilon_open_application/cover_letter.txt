@@ -1,0 +1,12 @@
+Subject: Open application — BIM specialist
+
+Dear Pilon Team,
+
+I'm writing on the off chance you have room for someone with a strong BIM background, since I couldn't find a specific opening listed. I've just completed a European Master's in Building Information Modelling at the University of Ljubljana, built on a Bachelor's in Civil Engineering, specializing in ISO 19650 coordination and IFC interoperability.
+
+I owned a federated BIM model's clash-detection workflow across architecture and MEP disciplines, validated against Employer's Information Requirements, and published an open-source tool converting IFC data into structured, queryable graph databases. Given Pilon's work with Archicad, MEP Designer and the wider BIM software ecosystem, I think there could be a genuine fit, whether in implementation, training or technical support.
+
+I'd welcome the opportunity to discuss whether there's a role for me at Pilon.
+
+Best regards,
+Haris Waheed Bhatti
