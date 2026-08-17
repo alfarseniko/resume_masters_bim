@@ -1,0 +1,12 @@
+Subject: Open application — BIM and geospatial background
+
+Dear Geoservis Team,
+
+I'm writing on the off chance you have room for someone with a BIM and geospatial background, since I couldn't find a specific opening listed. I've just completed a European Master's in Building Information Modelling at the University of Ljubljana, built on a Bachelor's in Civil Engineering with coursework in geographic information systems (ArcGIS).
+
+My Master's coursework included scan-to-BIM workflows from point-cloud capture, and I owned a federated BIM model's clash-detection workflow across architecture and MEP disciplines, validated under ISO 19650. Given Geoservis's work with 3D reality capture, GNSS and surveying equipment across construction and infrastructure, I think there could be a genuine fit connecting the data these tools capture to the BIM workflows that use it.
+
+I'd welcome the opportunity to discuss whether there's a role for me at Geoservis.
+
+Best regards,
+Haris Waheed Bhatti
