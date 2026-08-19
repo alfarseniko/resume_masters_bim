@@ -1,0 +1,12 @@
+Subject: Application for CDE Administrator (student work), Diagnostic Analytical Centre
+
+Dear ELES Team,
+
+I'm writing to apply for the student position administering your common data environment (Dalux) as part of the BIM implementation project. I've just completed a European Master's in Building Information Modelling at the University of Ljubljana, built on a Bachelor's in Civil Engineering.
+
+I owned a federated BIM model's clash-detection workflow across architecture and MEP disciplines using Autodesk Construction Cloud as a common data environment, validated against Employer's Information Requirements under ISO 19650, which gave me direct, practical experience with CDE administration and BIM workflow implementation.
+
+I'd welcome the opportunity to discuss how my background could contribute to your BIM implementation project.
+
+Best regards,
+Haris Waheed Bhatti
