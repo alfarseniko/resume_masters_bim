@@ -1,0 +1,12 @@
+Subject: Interested in the CYPE role you posted about
+
+Hi,
+
+Thanks for sharing this, I'd love to be considered. I'm a civil engineer with a European Master's in Building Information Modelling, and I've been building the software side of BIM alongside the coordination side: I published an open-source IFC-to-Neo4j converter on PyPI, completed a software engineering fellowship building apps in Python and JavaScript, and I'm currently in That Open Company's BIM software development programme, building AEC web applications with That Open Engine, Fragments and TypeScript.
+
+On the BIM side, I owned a federated model's clash-detection workflow across architecture and MEP disciplines, validated against Employer's Information Requirements under ISO 19650, so I understand the domain the software needs to serve, not just the code. That combination feels like a close match for the interoperability and Revit-focused work you described.
+
+I've attached my CV. I'd really appreciate you passing it along, and I'm happy to answer any questions in the meantime.
+
+Best regards,
+Haris Waheed Bhatti
