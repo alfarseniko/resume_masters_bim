@@ -1,0 +1,12 @@
+Subject: Application for AI Safety Expert, English and Urdu
+
+Dear Mercor Team,
+
+I'm applying for the AI Safety Expert role. I'm bilingual in English at C2 and Urdu at native level, and my Master's research was a systematic LLM evaluation study, so the combination this project calls for is the work I was doing until July.
+
+For my thesis I built an adaptive querying agent and then designed the harness used to evaluate it, benchmarking against a published baseline under matched conditions: same model, same validated judge, 23 datasets, 367 questions. I raised accuracy by 33 percentage points and source transparency from 12.5 percent to 99.7 percent through prompt design alone, and I reported where my approach lost to the baseline as carefully as where it won, because an evaluation that only surfaces wins is not an evaluation.
+
+That habit is what I would bring to red teaming: probing systematically rather than opportunistically, working to a taxonomy, and documenting failures so someone else can reproduce them. I'd welcome the chance to discuss the project.
+
+Best regards,
+Haris Waheed Bhatti

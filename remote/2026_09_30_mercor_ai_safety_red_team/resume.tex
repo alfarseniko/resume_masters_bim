@@ -1,0 +1,134 @@
+%==============================================================================
+%  HARIS WAHEED BHATTI -- CV
+%  VARIANT: BIM Coordinator / Information Manager (ISO 19650)
+%  Compile with pdflatex. Standalone; no switch.
+%==============================================================================
+\documentclass[a4paper,10.5pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{courier}   % Type 1 mono; without it \texttt falls back to a Type 3 bitmap
+\input{glyphtounicode}
+\pdfgentounicode=1
+\usepackage[left=1.4cm,right=1.4cm,top=1.0cm,bottom=1.0cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\raggedright
+\hyphenpenalty=10000 \exhyphenpenalty=10000 \hbadness=10000 \sloppy
+
+\titleformat{\section}{\large\bfseries\MakeUppercase}{}{0em}{}[\vspace{-6pt}\rule{\textwidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,nosep,topsep=1pt,parsep=0pt,itemsep=1pt}
+
+\newcommand{\datefill}{\dotfill}
+\newcommand{\entry}[3]{\vspace{2.5pt}\noindent\textbf{#1} \textbar{} #2 \datefill{} #3\par\vspace{0.5pt}}
+\newcommand{\skillrow}[2]{\noindent\textbf{#1:} #2\par\vspace{1pt}}
+
+ \newcommand{\ROLELINE}{LLM Evaluation and Adversarial Testing \textbar{} English and Urdu}
+
+\hypersetup{pdftitle={Haris Waheed Bhatti - CV}, pdfauthor={Haris Waheed Bhatti},
+            pdfsubject={\ROLELINE}}
+
+\newcommand{\projIfcToNeo}{%
+\entry{ifctoneo4j -- Python package (PyPI)}{Python, IfcOpenShell, Neo4j, Cypher}{2026}
+\begin{itemize}
+  \item Open-source library converting IFC models (IFC2X3, IFC4, IFC4X3) into Neo4j
+        property graphs aligned to Linked Building Data ontologies, with no RDF
+        intermediate. Published to PyPI: \texttt{pip install ifctoneo4j}.
+\end{itemize}}
+
+\newcommand{\projBIMGraph}{%
+\entry{BIMGraphExplorer -- LLM agent and evaluation study}{Python, MCP, LLM-as-judge}{2026}
+\begin{itemize}
+  \item Built an adaptive querying agent exposing four read-only tools over the Model
+        Context Protocol, then designed the evaluation harness used to measure it.
+  \item Raised answer accuracy by 33 percentage points and source transparency from
+        12.5\% to 99.7\% through prompt design alone, isolating prompt changes as the
+        only variable.
+  \item Benchmarked against a published baseline under matched conditions: same model,
+        same validated judge, 23 datasets, 367 questions, 15 projects. Reported the
+        losses as well as the wins, at 72.0\% overall accuracy against the baseline's
+        82.3\% while reaching source-transparency parity and outperforming it on 5 of
+        23 datasets, by up to 24 points on one.
+\end{itemize}}
+
+\newcommand{\projGuimaraes}{%
+\entry{Federated BIM Model -- Pakistani-Themed Expo, Guimar\~aes}{IFC, Autodesk Construction Cloud}{Oct 2025}
+\begin{itemize}
+  \item Owned the federated model and clash-detection workflow across architecture
+        and MEP disciplines, validated against Employer's Information Requirements
+        under ISO 19650.
+\end{itemize}}
+
+\newcommand{\projBlockchain}{%
+\entry{Blockchain-Based BIM Document Management}{Solidity, Ethereum (Arbitrum Sepolia)}{2024}
+\begin{itemize}
+  \item Smart contract system to sign and manage construction documents, with
+        immutable on-chain linkage, to streamline dispute resolution under FIDIC
+        contracts. Funded by a competitive grant from the
+        Pakistan Engineering Council.
+\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries HARIS WAHEED BHATTI}\\[2pt]
+  {\large \ROLELINE}\\[3pt]
+  Ljubljana, Slovenia \textbar{} +386 69 437 910 \textbar{} harisw95@gmail.com\\
+  \href{https://linkedin.com/in/bhatti25}{linkedin.com/in/bhatti25} \textbar{}
+  \href{https://github.com/alfarseniko}{github.com/alfarseniko}
+\end{center}
+\vspace{-4pt}
+
+\section{Profile}
+
+\noindent Engineering graduate, bilingual in English (C2) and Urdu (native), whose
+Master's research was a systematic LLM evaluation study. Designed the evaluation
+harness and benchmarked an adaptive querying agent against a published baseline under
+matched conditions across 23 datasets and 367 questions, raising answer accuracy by 33
+percentage points and source transparency from 12.5\% to 99.7\% through prompt design
+alone.
+
+\section{Projects}
+
+ \projBIMGraph \projIfcToNeo
+
+\section{Education}
+\entry{MSc, European Master in BIM (BIM A+)}{UL FGG, Ljubljana, Slovenia}{Oct 2025 -- Jul 2026}
+\begin{itemize}
+  \item Field of study: Information Management in Construction. Completed the
+        accelerated thesis track, finishing full MSc requirements in 10 months.
+        Final grade 9.27/10.
+  \item Thesis: \textit{Graph-Mediated LLM Exploration for IFC Question Answering:
+        A Benchmark Comparison Against Direct-IFC Approaches}. Supervisor:
+        Prof.~\v{Z}iga Turk. \href{http://hdl.handle.net/20.500.12556/RUL-185169}{hdl.handle.net/20.500.12556/RUL-185169}
+  \item Thesis work centred on LLM evaluation methodology: evaluating with a validated
+        LLM judge, holding model and dataset fixed to isolate the variable under test,
+        and reporting per-dataset results rather than headline averages alone.
+\end{itemize}
+
+\entry{BE Civil Engineering}{NUST, Islamabad, Pakistan (English-medium). Final grade 3.25/4.00}{Sep 2020 -- Jun 2024}
+
+\section{Experience}
+\entry{Software Engineering Fellow}{Headstarter AI (remote)}{2024}
+\begin{itemize}
+  \item Built AI-powered applications in Python and JavaScript over a 7-week fellowship,
+        including weekend hackathon projects and a capstone application.
+\end{itemize}
+
+\entry{Research Intern (remote)}{Southern Illinois University Edwardsville, USA}{July 2023}
+\begin{itemize}
+  \item Synthesised academic literature to support a faculty-mentored research proposal.
+\end{itemize}
+
+\section{Skills}
+
+\skillrow{AI Evaluation \& LLM}{LLM evaluation and benchmarking, evaluation harness design, LLM-as-judge evaluation, prompt design and ablation, structured error analysis, agentic systems, Model Context Protocol (MCP), RAG}
+\skillrow{Programming}{Python, TypeScript, JavaScript, Neo4j, Cypher, Git}
+\skillrow{Writing \& Reporting}{Reproducible benchmark reporting, technical documentation, published open-source package (PyPI), academic writing}
+
+\skillrow{Languages}{English (C2), Urdu (native, C2), Slovene (A1, actively learning)}
+
+\end{document}
